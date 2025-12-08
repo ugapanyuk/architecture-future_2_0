@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.2.4">
+  <diagram name="Автоматизация Yandex Cloud" id="YC_Terraform">
+    <mxGraphModel dx="2250" dy="964" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TF_Zone" parent="1" style="swimlane;html=1;startSize=30;horizontal=1;container=1;collapsible=0;rounded=1;arcSize=10;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" value="УПРАВЛЯЕТСЯ TERRAFORM (Yandex Cloud Provider)" vertex="1">
+          <mxGeometry height="560" width="800" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Network" parent="TF_Zone" style="swimlane;html=1;startSize=30;horizontal=1;container=1;collapsible=0;rounded=1;arcSize=10;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#666666;" value="Облачная Сеть (VPC Network)" vertex="1">
+          <mxGeometry height="460" width="720" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SubnetPub" parent="Network" style="swimlane;html=1;startSize=20;horizontal=1;container=1;collapsible=0;rounded=1;arcSize=10;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;dashed=1" value="Публичная Подсеть (ru-central1-a)" vertex="1">
+          <mxGeometry height="220" width="300" x="30" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VMPortal" parent="SubnetPub" style="shape=rect;html=1;rounded=1;whiteSpace=wrap;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="ВМ: Портал Самообслуживания&#xa;(NAT = true)" vertex="1">
+          <mxGeometry height="60" width="200" x="50" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PublicIP" parent="SubnetPub" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" value="Публичный IP" vertex="1">
+          <mxGeometry height="40" width="100" x="100" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="SubnetPriv" parent="Network" style="swimlane;html=1;startSize=20;horizontal=1;container=1;collapsible=0;rounded=1;arcSize=10;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;dashed=1" value="Частная Подсеть (ru-central1-b)" vertex="1">
+          <mxGeometry height="360" width="300" x="380" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VMProcess" parent="SubnetPriv" style="shape=rect;html=1;rounded=1;whiteSpace=wrap;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="ВМ: Обработка Данных&#xa;(NAT = false)" vertex="1">
+          <mxGeometry height="60" width="200" x="50" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DiskData" parent="SubnetPriv" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Доп. диск: Озеро Данных&#xa;(HDD 10 GB)" vertex="1">
+          <mxGeometry height="110" width="120" x="90" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="NATGw" parent="Network" style="shape=rhombus;html=1;rounded=1;whiteSpace=wrap;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="NAT Шлюз&lt;br&gt;(Выход в интернет для&amp;nbsp;&lt;br&gt;частной сети)" vertex="1">
+          <mxGeometry height="120" width="280" x="30" y="314" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" edge="1" parent="Network" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="NATGw" value="Маршрутизация">
+          <mxGeometry relative="1" x="0.4286" y="-34" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="380" y="374" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c1" edge="1" parent="TF_Zone" source="VMProcess" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="DiskData" value="Присоединение">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ManualZone" parent="1" style="swimlane;html=1;startSize=80;horizontal=1;container=1;collapsible=0;rounded=1;arcSize=10;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=14;" value="ПРЕДВАРИТЕЛЬНЫЕ РУЧНЫЕ НАСТРОЙКИ" vertex="1">
+          <mxGeometry height="560" width="260" x="880" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SSH" parent="ManualZone" style="shape=card;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="SSH-ключ&#xa;(id_rsa.pub)" vertex="1">
+          <mxGeometry height="60" width="160" x="61" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="Token" parent="ManualZone" style="shape=card;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="OAuth Токен / Ключ&#xa;(Для авторизации)" vertex="1">
+          <mxGeometry height="60" width="160" x="61" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="11ptu0SXYpUb_WAlqB6e-5" parent="ManualZone" style="ellipse;whiteSpace=wrap;html=1;" value="Сервисный Аккаунт&lt;br&gt;(Service Account)" vertex="1">
+          <mxGeometry height="80" width="170" x="51" y="145" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
