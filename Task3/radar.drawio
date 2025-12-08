@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.2.4">
+  <diagram name="Технологический Радар Будущее 2.0" id="TechRadar_Rus">
+    <mxGraphModel dx="1552" dy="665" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ring4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#cccccc;" value="" vertex="1">
+          <mxGeometry height="720" width="720" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ring3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="" vertex="1">
+          <mxGeometry height="540" width="540" x="130" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Ring2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="360" width="360" x="220" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Ring1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="180" width="180" x="310" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="AxisY" edge="1" parent="1" source="Ring4" style="endArrow=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" target="Ring4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AxisX" edge="1" parent="1" source="Ring4" style="endArrow=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;" target="Ring4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Sec1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" value="1. ДАННЫЕ И АНАЛИТИКА" vertex="1">
+          <mxGeometry height="30" width="200" x="605" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Sec2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" value="2. ИНФРАСТРУКТУРА" vertex="1">
+          <mxGeometry height="30" width="200" x="600" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="Sec3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" value="3. ПРИЛОЖЕНИЯ И ЯЗЫКИ" vertex="1">
+          <mxGeometry height="30" width="200" x="10" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="Sec4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" value="4. МЕТОДОЛОГИИ" vertex="1">
+          <mxGeometry height="30" width="200" x="30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lbl1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" value="ВНЕДРЯТЬ" vertex="1">
+          <mxGeometry height="30" width="70" x="400" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Lbl2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" value="ПРОБОВАТЬ" vertex="1">
+          <mxGeometry height="30" width="70" x="330" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Lbl3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" value="ИЗУЧАТЬ" vertex="1">
+          <mxGeometry height="30" width="70" x="320" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Lbl4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=10;" value="ИЗБЕГАТЬ" vertex="1">
+          <mxGeometry height="30" width="70" x="320" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T1" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1" value="Озеро Данных&#xa;(Data Lake)" vertex="1">
+          <mxGeometry height="70" width="70" x="460" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="T2" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1" value="Витрины&#xa;(Data Marts)" vertex="1">
+          <mxGeometry height="60" width="60" x="414" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="T3" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" value="Каталог Данных&#xa;(Data Catalog)" vertex="1">
+          <mxGeometry height="70" width="70" x="480" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="T4" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" value="Монолит DWH&#xa;(SQL 2008)" vertex="1">
+          <mxGeometry height="70" width="70" x="605" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="T5" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1" value="Облачная&#xa;Платформа" vertex="1">
+          <mxGeometry height="70" width="70" x="450" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="T6" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1" value="Шина Событий&#xa;(Kafka/MQ)" vertex="1">
+          <mxGeometry height="60" width="60" x="400" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="T7" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" value="Локальные&#xa;Серверы" vertex="1">
+          <mxGeometry height="70" width="70" x="570" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="T8" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1" value="Python&#xa;(Для ИИ)" vertex="1">
+          <mxGeometry height="60" width="60" x="320" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="T9" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1" value="Go / Java&#xa;(Финтех)" vertex="1">
+          <mxGeometry height="60" width="60" x="270" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="T10" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" value="Новый BI&#xa;(Веб-портал)" vertex="1">
+          <mxGeometry height="70" width="70" x="245" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="T11" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" value="PowerBuilder&#xa;(Старый UI)" vertex="1">
+          <mxGeometry height="70" width="70" x="120" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="T12" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1" value="Доменная&#xa;Архитектура" vertex="1">
+          <mxGeometry height="70" width="70" x="330" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="T13" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" value="Самообслуживание&#xa;(Self-Service)" vertex="1">
+          <mxGeometry height="80" width="80" x="240" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="T14" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" value="Ручные&#xa;Отчеты" vertex="1">
+          <mxGeometry height="70" width="70" x="140" y="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

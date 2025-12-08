@@ -1,0 +1,6 @@
+token     = "КЛЮЧ УДАЛЕН ИЗ COMMIT ПО СООБРАЖЕНИЯМ БЕЗОПАСНОСТИ"
+cloud_id  = "КЛЮЧ УДАЛЕН ИЗ COMMIT ПО СООБРАЖЕНИЯМ БЕЗОПАСНОСТИ"
+folder_id = "КЛЮЧ УДАЛЕН ИЗ COMMIT ПО СООБРАЖЕНИЯМ БЕЗОПАСНОСТИ"
+zone_a    = "ru-central1-a"
+zone_b    = "ru-central1-b"
+ssh_key_path = "~/.ssh/id_rsa.pub"
